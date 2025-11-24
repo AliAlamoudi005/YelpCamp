@@ -1,4 +1,5 @@
 const Joi = require("joi");
+const sanitizeHtml = require("sanitize-html");
 
 module.exports.campgroundSchema = Joi.object({
   campground: Joi.object({
